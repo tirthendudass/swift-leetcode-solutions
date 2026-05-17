@@ -55,6 +55,8 @@ func twoSums(_ nums: [Int], _ target: Int) -> [Int] {
     return []
 }
 
+//MARK: - Time and Space Complexity
+
 /*
  Time Complexity:
  O(n)
@@ -65,6 +67,96 @@ func twoSums(_ nums: [Int], _ target: Int) -> [Int] {
  O(n)
  - Extra dictionary storage
  */
+
+//MARK: - Dry Run 
+
+/*
+ Input:
+ nums = [2,7,11,15]
+ target = 26
+
+ --------------------------------------------------
+
+ Initial State:
+ map = [:]
+
+ --------------------------------------------------
+
+ Iteration 1:
+
+ index = 0
+ num = 2
+
+ needed = 26 - 2
+ needed = 24
+
+ Check:
+ map[24] -> not found
+
+ Store current number:
+ map = [2:0]
+
+ --------------------------------------------------
+
+ Iteration 2:
+
+ index = 1
+ num = 7
+
+ needed = 26 - 7
+ needed = 19
+
+ Check:
+ map[19] -> not found
+
+ Store current number:
+ map = [2:0, 7:1]
+
+ --------------------------------------------------
+
+ Iteration 3:
+
+ index = 2
+ num = 11
+
+ needed = 26 - 11
+ needed = 15
+
+ Check:
+ map[15] -> not found
+
+ Store current number:
+ map = [2:0, 7:1, 11:2]
+
+ --------------------------------------------------
+
+ Iteration 4:
+
+ index = 3
+ num = 15
+
+ needed = 26 - 15
+ needed = 11
+
+ Check:
+ map[11] -> FOUND at index 2
+
+ Pair Found:
+ nums[2] + nums[3]
+ 11 + 15 = 26
+
+ Return:
+ [2, 3]
+
+ --------------------------------------------------
+
+ Final Output:
+ [2,3]
+ */
+
+
+
+
 
 
 
