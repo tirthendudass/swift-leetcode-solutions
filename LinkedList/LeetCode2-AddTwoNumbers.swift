@@ -101,6 +101,8 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     return dummy.next
 }
 
+//MARK: - Time and Space Complexity
+
 /*
  Time Complexity:
  O(max(m, n))
@@ -113,4 +115,129 @@ func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
  O(max(m, n))
 
  - New linked list is created to store result
+ */
+
+//MARK: - Dry Run
+
+/*
+ Input:
+ l1 = [2,4,3]
+ l2 = [5,6,4]
+
+ Represents:
+ 342 + 465
+
+ --------------------------------------------------
+
+ Initial State:
+
+ carry = 0
+
+ dummy -> 0
+
+ p points to:
+ 2 -> 4 -> 3
+
+ q points to:
+ 5 -> 6 -> 4
+
+ --------------------------------------------------
+
+ Iteration 1:
+
+ x = 2
+ y = 5
+ carry = 0
+
+ sum = 2 + 5 + 0
+ sum = 7
+
+ digit = 7 % 10 = 7
+ carry = 7 / 10 = 0
+
+ Create node:
+ 7
+
+ Result List:
+ dummy -> 7
+
+ Move pointers forward
+
+ p -> 4
+ q -> 6
+
+ --------------------------------------------------
+
+ Iteration 2:
+
+ x = 4
+ y = 6
+ carry = 0
+
+ sum = 4 + 6 + 0
+ sum = 10
+
+ digit = 10 % 10 = 0
+ carry = 10 / 10 = 1
+
+ Create node:
+ 0
+
+ Result List:
+ dummy -> 7 -> 0
+
+ Move pointers forward
+
+ p -> 3
+ q -> 4
+
+ --------------------------------------------------
+
+ Iteration 3:
+
+ x = 3
+ y = 4
+ carry = 1
+
+ sum = 3 + 4 + 1
+ sum = 8
+
+ digit = 8 % 10 = 8
+ carry = 8 / 10 = 0
+
+ Create node:
+ 8
+
+ Result List:
+ dummy -> 7 -> 0 -> 8
+
+ Move pointers forward
+
+ p -> nil
+ q -> nil
+
+ --------------------------------------------------
+
+ Loop Ends:
+ p == nil
+ q == nil
+ carry == 0
+
+ --------------------------------------------------
+
+ Final Result:
+
+ dummy -> 7 -> 0 -> 8
+
+ Return:
+ [7,0,8]
+
+ Represents:
+ 807
+
+ --------------------------------------------------
+
+ Final Calculation:
+
+ 342 + 465 = 807
  */
