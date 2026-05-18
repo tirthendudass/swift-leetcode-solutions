@@ -17,7 +17,7 @@
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange?style=for-the-badge&logo=swift)
 ![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-yellow?style=for-the-badge&logo=leetcode)
 ![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20DSA-blue?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems-50%2B-success?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems-3%2B-success?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
@@ -177,9 +177,9 @@ This repository is built to improve:
 # 📈 Progress
 
 ```text
-🟢 Easy     : ██████████░░░░░░
-🟡 Medium   : ███████░░░░░░░░░
-🔴 Hard     : ██░░░░░░░░░░░░░░
+🟢 Easy     : ███░░░░░
+🟡 Medium   : █░░░
+🔴 Hard     : █░
 ```
 
 🚀 Consistency > Intensity
