@@ -1,4 +1,3 @@
-# swift-leetcode-solutions
 # ✨ swift-leetcode-solutions ✨
 
 <p align="center">
